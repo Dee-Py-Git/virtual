@@ -1,0 +1,26 @@
+.verify-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .verify-email.success {
+    color: #4CAF50;
+  }
+  
+  .verify-email.error {
+    color: #F44336;
+  }
+  
+  .verify-email h1 {
+    font-size: 2em;
+  }
+  
+  .verify-email p {
+    font-size: 1.2em;
+  }
+  
