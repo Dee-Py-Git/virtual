@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found</title>
   <script>
-    // Redirect all 404 requests to index.html
+    // Get the pathname and redirect it to the correct subdirectory
     var redirect = window.location.pathname;
-    window.location.replace("/virtual" + redirect);
+    
+    // If the URL is already within "/virtual", just redirect to the root
+    if (!redirect.startsWith("/virtual")) {
+      window.location.replace("/virtual" + redirect);
+    } else {
+      window.location.replace("/virtual/");
+    }
   </script>
 </head>
 <body>
