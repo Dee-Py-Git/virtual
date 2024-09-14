@@ -1,25 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
-    <script type="text/javascript">
-      // Path handling for subdirectory deployment
-      var redirect = window.location.pathname;
-
-      // If the path doesn't already start with "/virtual", adjust it
-      if (!redirect.startsWith('/virtual')) {
-        window.location.replace('/virtual' + redirect);
-      } else {
-        // Fallback: redirect to the root of /virtual (index.html)
-        window.location.replace('/virtual/');
-      }
-    </script>
+    <meta http-equiv="refresh" content="0; url=/virtual/index.html" />
+    <title>Redirecting...</title>
   </head>
   <body>
-    <h1>404 - Page Not Found</h1>
-    <p>Redirecting you back to the app...</p>
+    <p>Redirecting...</p>
   </body>
 </html>
