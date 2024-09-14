@@ -1,22 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found</title>
-  <script>
-    // Get the pathname and redirect it to the correct subdirectory
-    var redirect = window.location.pathname;
-    
-    // If the URL is already within "/virtual", just redirect to the root
-    if (!redirect.startsWith("/virtual")) {
-      window.location.replace("/virtual" + redirect);
-    } else {
-      window.location.replace("/virtual/");
-    }
-  </script>
-</head>
-<body>
-</body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+  </head>
+  <body>
+  </body>
 </html>
